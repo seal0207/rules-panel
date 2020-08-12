@@ -61,7 +61,6 @@ RewriteRule ^(.*)$ index.php/$1 [QSA,PT,L]
 
 `wget http://ftp.taoluyun.cc/iptables-pf.sh && chmod +x iptables-pf.sh`
 
-wget -qO natcfg.sh http://arloor.com/sh/iptablesUtils/natcfg.sh && bash natcfg.sh
 
 
 然后执行 `./iptables-pf.sh` 执行选项1安装iptables
@@ -81,6 +80,8 @@ CENTOS执行:
 Debian执行:
 
 `iptables-save > /etc/iptables.up.rules`
+
+iptables-save > /etc/network/iptables.up.rules
 
 #下载被控文件：
 
